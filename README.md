@@ -50,7 +50,3 @@ Para fazer deploy:
 
 1. Build: `pnpm build`
 2. Publique a pasta `dist` no GitHub Pages, Vercel ou outro serviço de hosting
-
-## Licença
-
-MIT

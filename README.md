@@ -4,7 +4,7 @@ Site informativo sobre agronegócio sustentável desenvolvido para o Concurso Ag
 
 ## Sobre o Projeto
 
-Este site apresenta o tema **"Agro forte, futuro sustentável: equilíbrio entre produção e meio ambiente"** através de uma interface moderna e profissional.
+Este site apresenta o tema **"Agro forte, futuro sustentável: equilíbrio entre produção e meio ambiente"** através de uma interface moderna e intuitiva.
 
 **Tecnologias utilizadas:**
 - HTML5
@@ -25,28 +25,7 @@ Este site apresenta o tema **"Agro forte, futuro sustentável: equilíbrio entre
 ## Design
 
 **Paleta de cores:**
-- Verde floresta: #2D5016 (primário)
-- Marrom terra: #8B7355 (secundário)
+- Verde: #2D5016 (primário)
+- Marrom: #8B7355 (secundário)
 - Verde claro: #A4D65E (acentos)
 - Branco: #FFFFFF (fundo)
-
-**Características:**
-- Design limpo e minimalista
-- Animações suaves ao scroll
-- Responsivo (mobile, tablet, desktop)
-- Navegação intuitiva
-- Cards com efeitos hover
-
-## Como Usar
-
-1. Clone ou baixe o repositório
-2. Instale as dependências: `pnpm install`
-3. Inicie o servidor de desenvolvimento: `pnpm dev`
-4. Abra http://localhost:3000 no navegador
-
-## Deployment
-
-Para fazer deploy:
-
-1. Build: `pnpm build`
-2. Publique a pasta `dist` no GitHub Pages, Vercel ou outro serviço de hosting

@@ -51,14 +51,6 @@ Para fazer deploy:
 1. Build: `pnpm build`
 2. Publique a pasta `dist` no GitHub Pages, Vercel ou outro serviço de hosting
 
-## Requisitos do Concurso Agrinho
-
-✅ HTML, CSS e JavaScript puros (sem frameworks)
-✅ CSS e JavaScript em arquivos separados
-✅ Código limpo e bem organizado
-✅ Tema alinhado com sustentabilidade
-✅ Pronto para GitHub Pages/Vercel
-
 ## Licença
 
 MIT

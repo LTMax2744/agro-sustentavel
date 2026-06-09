@@ -106,7 +106,7 @@
     @apply bg-background text-foreground font-sans;
   }
   h1, h2, h3, h4, h5, h6 {
-    @apply font-display;
+    font-family: 'Playfair Display', serif;
   }
   button:not(:disabled),
   [role="button"]:not([aria-disabled="true"]),
@@ -149,10 +149,6 @@
   }
 
   /* Typography */
-  .font-display {
-    font-family: 'Playfair Display', serif;
-  }
-
   .font-sans {
     font-family: 'Inter', sans-serif;
   }

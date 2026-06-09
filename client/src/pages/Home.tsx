@@ -24,6 +24,8 @@ function AnimatedCard({ isVisible, delay }: AnimatedCardProps) {
   };
 }
 
+const displayStyle = { fontFamily: "'Playfair Display', serif" };
+
 export default function Home() {
   const [visibleSections, setVisibleSections] = useState<Record<string, boolean>>({});
 
@@ -58,7 +60,9 @@ export default function Home() {
             <div className="w-8 h-8 bg-primary rounded-full flex items-center justify-center">
               <Leaf className="w-5 h-5 text-white" />
             </div>
-            <span className="font-display text-xl font-bold text-primary">AgroForte</span>
+            <span className="text-xl font-bold text-primary" style={displayStyle}>
+              AgroForte
+            </span>
           </div>
           <div className="hidden md:flex items-center gap-8">
             <a href="#tema" className="text-sm hover:text-primary transition-colors">
@@ -81,7 +85,7 @@ export default function Home() {
       <section className="relative overflow-hidden bg-gradient-to-br from-primary to-primary/80 text-white py-20 md:py-32">
         <div className="container relative z-10">
           <div className="max-w-2xl">
-            <h1 className="font-display text-4xl md:text-6xl font-bold mb-6 leading-tight">
+            <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight" style={displayStyle}>
               Agro Forte, Futuro Sustentável
             </h1>
             <p className="text-lg md:text-xl text-white/90 mb-8 leading-relaxed">
@@ -114,7 +118,7 @@ export default function Home() {
                   Tema Central
                 </span>
               </div>
-              <h2 className="font-display text-4xl md:text-5xl font-bold text-primary">
+              <h2 className="text-4xl md:text-5xl font-bold text-primary" style={displayStyle}>
                 O Equilíbrio Necessário
               </h2>
               <p className="text-lg text-muted-foreground leading-relaxed">
@@ -131,25 +135,33 @@ export default function Home() {
               className="grid grid-cols-2 gap-4"
             >
               <Card className="p-6 bg-gradient-to-br from-accent/10 to-accent/5 border-l-4 border-l-accent">
-                <div className="text-4xl font-bold text-primary mb-2">33%</div>
+                <div className="text-4xl font-bold text-primary mb-2" style={displayStyle}>
+                  33%
+                </div>
                 <p className="text-sm text-muted-foreground">
                   Do PIB brasileiro vem do agronegócio
                 </p>
               </Card>
               <Card className="p-6 bg-gradient-to-br from-secondary/10 to-secondary/5 border-l-4 border-l-secondary">
-                <div className="text-4xl font-bold text-secondary mb-2">8.5B</div>
+                <div className="text-4xl font-bold text-secondary mb-2" style={displayStyle}>
+                  8.5B
+                </div>
                 <p className="text-sm text-muted-foreground">
                   Hectares sob manejo sustentável
                 </p>
               </Card>
               <Card className="p-6 bg-gradient-to-br from-primary/10 to-primary/5 border-l-4 border-l-primary">
-                <div className="text-4xl font-bold text-primary mb-2">1º</div>
+                <div className="text-4xl font-bold text-primary mb-2" style={displayStyle}>
+                  1º
+                </div>
                 <p className="text-sm text-muted-foreground">
                   Brasil em produção de alimentos
                 </p>
               </Card>
               <Card className="p-6 bg-gradient-to-br from-accent/10 to-accent/5 border-l-4 border-l-accent">
-                <div className="text-4xl font-bold text-primary mb-2">61%</div>
+                <div className="text-4xl font-bold text-primary mb-2" style={displayStyle}>
+                  61%
+                </div>
                 <p className="text-sm text-muted-foreground">
                   Território preservado em florestas
                 </p>
@@ -166,7 +178,7 @@ export default function Home() {
             <span className="text-sm font-semibold text-accent uppercase tracking-wide">
               Soluções Sustentáveis
             </span>
-            <h2 className="font-display text-4xl md:text-5xl font-bold text-primary mt-4">
+            <h2 className="text-4xl md:text-5xl font-bold text-primary mt-4" style={displayStyle}>
               Práticas que Transformam
             </h2>
             <p className="text-lg text-muted-foreground mt-6 max-w-2xl mx-auto">
@@ -231,7 +243,7 @@ export default function Home() {
                     <div className="w-12 h-12 bg-accent/20 rounded-lg flex items-center justify-center mb-6 group-hover:bg-accent/30 transition-colors">
                       <Icon className="w-6 h-6 text-primary" />
                     </div>
-                    <h3 className="font-display text-xl font-bold text-primary mb-3">
+                    <h3 className="text-xl font-bold text-primary mb-3" style={displayStyle}>
                       {item.title}
                     </h3>
                     <p className="text-muted-foreground leading-relaxed">{item.description}</p>
@@ -253,25 +265,33 @@ export default function Home() {
             >
               <div className="grid grid-cols-2 gap-6">
                 <div className="bg-gradient-to-br from-primary/10 to-primary/5 p-8 rounded-lg border border-primary/20">
-                  <div className="text-5xl font-bold text-primary font-display mb-3">+45%</div>
+                  <div className="text-5xl font-bold text-primary mb-3" style={displayStyle}>
+                    +45%
+                  </div>
                   <p className="text-sm text-muted-foreground font-semibold">
                     Aumento de produtividade com práticas sustentáveis
                   </p>
                 </div>
                 <div className="bg-gradient-to-br from-accent/10 to-accent/5 p-8 rounded-lg border border-accent/20">
-                  <div className="text-5xl font-bold text-primary font-display mb-3">-30%</div>
+                  <div className="text-5xl font-bold text-primary mb-3" style={displayStyle}>
+                    -30%
+                  </div>
                   <p className="text-sm text-muted-foreground font-semibold">
                     Redução de emissões de carbono
                   </p>
                 </div>
                 <div className="bg-gradient-to-br from-secondary/10 to-secondary/5 p-8 rounded-lg border border-secondary/20">
-                  <div className="text-5xl font-bold text-secondary font-display mb-3">500M</div>
+                  <div className="text-5xl font-bold text-secondary mb-3" style={displayStyle}>
+                    500M
+                  </div>
                   <p className="text-sm text-muted-foreground font-semibold">
                     Toneladas de CO2 sequestradas anualmente
                   </p>
                 </div>
                 <div className="bg-gradient-to-br from-primary/10 to-primary/5 p-8 rounded-lg border border-primary/20">
-                  <div className="text-5xl font-bold text-primary font-display mb-3">$2T</div>
+                  <div className="text-5xl font-bold text-primary mb-3" style={displayStyle}>
+                    $2T
+                  </div>
                   <p className="text-sm text-muted-foreground font-semibold">
                     Valor agregado ao PIB anualmente
                   </p>
@@ -287,7 +307,7 @@ export default function Home() {
                   Resultados Mensuráveis
                 </span>
               </div>
-              <h2 className="font-display text-4xl md:text-5xl font-bold text-primary">
+              <h2 className="text-4xl md:text-5xl font-bold text-primary" style={displayStyle}>
                 Impacto Real da Sustentabilidade
               </h2>
               <p className="text-lg text-muted-foreground leading-relaxed">
@@ -308,17 +328,19 @@ export default function Home() {
       </section>
 
       {/* Futuro Section */}
-      <section id="futuro" data-animate className="py-20 md:py-32 bg-gradient-to-br from-primary to-primary/90 text-white relative overflow-hidden">
+      <section
+        id="futuro"
+        data-animate
+        className="py-20 md:py-32 bg-gradient-to-br from-primary to-primary/90 text-white relative overflow-hidden"
+      >
         <div className="absolute top-0 right-0 w-96 h-96 bg-white/5 rounded-full -mr-48 -mt-48" />
         <div className="container relative z-10">
           <div className="max-w-3xl mx-auto text-center">
-            <div
-              style={AnimatedCard({ isVisible: visibleSections["futuro"], delay: 0 })}
-            >
+            <div style={AnimatedCard({ isVisible: visibleSections["futuro"], delay: 0 })}>
               <span className="text-sm font-semibold text-accent uppercase tracking-wide">
                 Visão de Futuro
               </span>
-              <h2 className="font-display text-4xl md:text-5xl font-bold mt-4 mb-6">
+              <h2 className="text-4xl md:text-5xl font-bold mt-4 mb-6" style={displayStyle}>
                 Um Agro Forte e Sustentável
               </h2>
               <p className="text-lg text-white/90 leading-relaxed mb-8">
@@ -338,19 +360,25 @@ export default function Home() {
               className="grid md:grid-cols-3 gap-6 mt-12"
             >
               <div className="bg-white/10 backdrop-blur-sm p-8 rounded-lg border border-white/20">
-                <div className="text-4xl font-bold mb-3">2030</div>
+                <div className="text-4xl font-bold mb-3" style={displayStyle}>
+                  2030
+                </div>
                 <p className="text-white/80">
                   Carbono neutro em 50% das propriedades agrícolas
                 </p>
               </div>
               <div className="bg-white/10 backdrop-blur-sm p-8 rounded-lg border border-white/20">
-                <div className="text-4xl font-bold mb-3">100%</div>
+                <div className="text-4xl font-bold mb-3" style={displayStyle}>
+                  100%
+                </div>
                 <p className="text-white/80">
                   Rastreabilidade de produtos sustentáveis
                 </p>
               </div>
               <div className="bg-white/10 backdrop-blur-sm p-8 rounded-lg border border-white/20">
-                <div className="text-4xl font-bold mb-3">10B</div>
+                <div className="text-4xl font-bold mb-3" style={displayStyle}>
+                  10B
+                </div>
                 <p className="text-white/80">
                   Hectares sob manejo regenerativo
                 </p>
@@ -381,7 +409,9 @@ export default function Home() {
                 <div className="w-8 h-8 bg-accent rounded-full flex items-center justify-center">
                   <Leaf className="w-5 h-5 text-primary" />
                 </div>
-                <span className="font-display text-lg font-bold">AgroForte</span>
+                <span className="text-lg font-bold" style={displayStyle}>
+                  AgroForte
+                </span>
               </div>
               <p className="text-white/70 text-sm">
                 Equilíbrio entre produção e meio ambiente
